@@ -8,7 +8,7 @@
 import Foundation
 // MARK: - Model
 
-struct FlickrImage: Codable, Identifiable, Hashable {
+struct FlickrImage: Codable, Identifiable, Hashable, Sendable {
     let id = UUID()
     let title: String?
     let link: String?
@@ -35,3 +35,7 @@ struct FlickrImage: Codable, Identifiable, Hashable {
 struct FlickrResponse: Codable {
     let items: [FlickrImage]
 }
+
+
+
+

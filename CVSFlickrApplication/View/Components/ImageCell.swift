@@ -27,7 +27,7 @@ struct ImageCell: View {
                     EmptyView()
                 }
             }
-            .frame(width: 100, height: 100)
+            .frame(width: 117, height: 115)
             .clipped()
             .background(Color.gray.opacity(0.1))
             .cornerRadius(8)

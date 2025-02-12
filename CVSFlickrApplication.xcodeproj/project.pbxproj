@@ -39,22 +39,11 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		375BA55F2D5BCF8C00520E7E /* Exceptions for "CVSFlickrApplication" folder in "Copy Bundle Resources" phase from "CVSFlickrApplication" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 371A25032D5B98A70039144F /* Resources */;
-			membershipExceptions = (
-				View/Components/extension.swift,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		371A25072D5B98A70039144F /* CVSFlickrApplication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				375BA55E2D5BCF8C00520E7E /* Exceptions for "CVSFlickrApplication" folder in "CVSFlickrApplication" target */,
-				375BA55F2D5BCF8C00520E7E /* Exceptions for "CVSFlickrApplication" folder in "Copy Bundle Resources" phase from "CVSFlickrApplication" target */,
 			);
 			path = CVSFlickrApplication;
 			sourceTree = "<group>";
