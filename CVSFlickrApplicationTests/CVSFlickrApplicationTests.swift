@@ -15,6 +15,7 @@ final class CVSFlickrApplicationTests: XCTestCase {
     var mockDataProvider: MockFlickrDataProvider!
     var images: [FlickrImage] = []
     var detailView: ImageDetailView!
+    var animationNamespace: Namespace.ID!
     
     override func setUp()  {
         super.setUp()
@@ -26,7 +27,10 @@ final class CVSFlickrApplicationTests: XCTestCase {
                     FlickrImage(title: "Car", link: "", media: ["m": "https://test.com/image2.jpg"], dateTaken: "", description: "", published: "2023-02-10T12:30:00Z", author: "tom"),
                     FlickrImage(title: "Bird", link: "", media: ["m": "https://test.com/image3.jpg"], dateTaken: "", description: "", published: "2022-01-10T12:30:00Z", author: "kim")
                 ]
+            let namespace = Namespace()
+                animationNamespace = namespace.wrappedValue
                 mockDataProvider.mockResponse = images
+        
     }
 
     override func tearDown()  {
@@ -61,8 +65,9 @@ final class CVSFlickrApplicationTests: XCTestCase {
         XCTAssertGreaterThan(viewModel.images.count, 0, "Images should be loaded successfully")
     }
     
-    func testImageDetailViewContent() {
-            let detailViews = ImageDetailView(image: images[0], viewModel: viewModel, animationNamespace: Namespace().wrappedValue)
+    
+    func testImageDetailViewContent() async{
+            let detailViews =  ImageDetailView(image: images[0], viewModel: viewModel, animationNamespace: animationNamespace)
 
         XCTAssertEqual(detailViews.image.title, "Horse")
         XCTAssertEqual(detailViews.image.author, "jack")

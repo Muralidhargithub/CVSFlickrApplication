@@ -15,19 +15,4 @@ enum Constants {
         static let defaultSearchQuery = "nature"
     }
     
-    enum Layout {
-        static let gridSpacing: CGFloat = 2
-        static let minimumGridItemSize: CGFloat = 100
-    }
 }
-enum UIStrings: String {
-    case loading = "Loading..."
-    case failedToLoadImage = "Failed to load image. Tap to retry."
-    case titleNotAvailable = "Title not available."
-    case descriptionNotAvailable = "Description not available."
-    case flickrSearch = "Flickr Search"
-    case searchImagesPlaceholder = "Search images..."
-
-}
-
-
