@@ -28,6 +28,8 @@ class FlickrViewModel: ObservableObject {
     }
 }
 
+//MARK: - Search
+
 extension FlickrViewModel {
     func search(for query: String) async {
         guard !query.isEmpty else {
@@ -77,7 +79,7 @@ extension FlickrViewModel {
             for await result in group {
                 switch result {
                 case .success(let images):
-                    allImages.formUnion(images) // ✅ Correct way to add to a Set
+                    allImages.formUnion(images)
                 case .failure(let error):
                     errors.append(error.localizedDescription)
                 }
@@ -85,7 +87,7 @@ extension FlickrViewModel {
         }
 
         await MainActor.run {
-            self.images = Array(allImages) // ✅ Convert Set back to Array
+            self.images = Array(allImages)
             self.errorMessage = errors.isEmpty ? nil : errors.joined(separator: "\n")
         }
     }
@@ -96,7 +98,7 @@ extension FlickrViewModel {
         }
     }
 
-
+//MARK: - SearchBinding
 
 extension FlickrViewModel {
     private func setupSearchBinding() {

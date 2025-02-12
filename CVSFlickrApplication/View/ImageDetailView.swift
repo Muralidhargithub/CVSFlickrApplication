@@ -32,12 +32,16 @@ struct ImageDetailView: View {
 }
 
 
+//MARK: - BackgroundView
+
 struct BackgroundView: View {
     var body: some View {
         Color(.systemGroupedBackground)
             .ignoresSafeArea()
     }
 }
+
+//MARK: - ImageSection
 
 
 struct ImageSection: View {
@@ -69,6 +73,7 @@ struct ImageSection: View {
     }
 }
 
+//MARK: - MetadataSection
 
 struct MetadataSection: View {
     let image: FlickrImage
@@ -114,7 +119,7 @@ struct MetadataSection: View {
             }
         }
         .padding()
-        .frame(maxWidth: .infinity, alignment: .leading) // ✅ Align content properly
+        .frame(maxWidth: .infinity, alignment: .leading) 
         .background(Color.white)
         .cornerRadius(30)
         .shadow(radius: 5)
@@ -123,6 +128,7 @@ struct MetadataSection: View {
 }
 
 
+//MARK: - ShareButton
 
 struct ShareButton: View {
     let image: FlickrImage
