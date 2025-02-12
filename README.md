@@ -51,11 +51,14 @@ This iOS application allows users to **search Flickr images dynamically**, view 
 
 ## 📸 **Screenshots & Video Demonstration**  
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/32328e2a-7849-40fb-9d73-2717e4945af9" width="30%" />
-    <img src="https://github.com/user-attachments/assets/fa1eb0df-a8ae-4f7e-ac98-620b8bfd0809" width="30%" />
-    <img src="https://github.com/user-attachments/assets/6667d736-87ce-4582-87c7-1a9dd8c77ed8" width="30%" />
+    <img src="https://github.com/user-attachments/assets/68796aff-189b-4600-827c-229d44c5d412" width="20%" />
+    <img src="https://github.com/user-attachments/assets/fa1eb0df-a8ae-4f7e-ac98-620b8bfd0809" width="20%" />
+    <img src="https://github.com/user-attachments/assets/6667d736-87ce-4582-87c7-1a9dd8c77ed8" width="20%" />
+    <img src="https://github.com/user-attachments/assets/f7ee5228-9e35-470f-a3b4-7592f2a5be24" width="20%" />
 </p>
-  
+
+
+
 - **Search Functionality in Action**
   
 https://github.com/user-attachments/assets/0600056a-3850-4241-b9e7-0889c8b97b75
